@@ -15,6 +15,6 @@ class String
   end
 
   def count_sentences
-   self.split(/[.!?]/).select{(/[.!?]/)}.count
+   self.split(/[.!?]/).select{|sentence| if sentence < 1}.count
  end
 end
